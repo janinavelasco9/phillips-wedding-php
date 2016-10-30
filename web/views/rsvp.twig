@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+<div class="app">
+    <section class="hero">
+        <div class="hero__image">
+            <img class="image" src="images/janina-mark-ball.jpg" alt="" />
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>
+            Wedding Shower RSVP
+        </h1>
+        <p>
+            Please RSVP by January 4th, 2017
+        </p>
+
+        <form action="/rsvp" method="post" class="form">
+            <div class="form-group">
+                <div class="input-field input-field--group">
+                    <label for="">First Name</label>
+                    <input class="text-input" type="text" name="firstName" required data-required-message="First name is required.">
+                </div>
+                <div class="input-field input-field--group">
+                    <label for="">Last Name</label>
+                    <input class="text-input" type="text" name="lastName" required data-required-message="Last name is required.">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <label for="">Will you be attending?</label>
+                <input class="text-input" type="text" name="attending" required data-required-message="Answer is required.">
+            </div>
+
+            <div class="input-field">
+                <label for="">Any dietary needs?</label>
+                <textarea class="text-input" type="text" name="dietary" rows="8" cols="40"></textarea>
+            </div>
+
+            <div>
+                <input class="btn" type="submit" value="Submit" name="submit"/>
+            </div>
+        </form>
+    </div>
+</div>
