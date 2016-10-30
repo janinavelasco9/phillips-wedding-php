@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/janinavelasco9/phillips-wedding-php#readme",
   "devDependencies": {
+    "browser-sync": "^2.17.5",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",

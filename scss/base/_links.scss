@@ -1,0 +1,18 @@
+.link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link--header {
+    transition: color 0.7s ease;
+
+    &:hover,
+    &:active {
+        color: $coral;
+    }
+}
+
+.active {
+    border-bottom: 1px solid $coral;
+}

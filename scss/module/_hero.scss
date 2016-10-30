@@ -1,0 +1,25 @@
+.hero {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.hero__content {
+    border-top: 2px solid $gray-light;
+    border-bottom: 2px solid $gray-light;
+    margin: 2em auto;
+    width: 80%;
+
+    @media screen and (min-width: $mobile-breakpoint) {
+        width: 50%;
+    }
+}
+
+.hero__content__headline {
+    color: $black;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.hero-trailer {
+    margin-bottom: 2em;
+}

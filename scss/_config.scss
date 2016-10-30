@@ -1,0 +1,41 @@
+$mobile-breakpoint: 38em;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+.app {
+    margin-top: 3.25em; //height of the .site-header
+}
+
+.container {
+    max-width: 46em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+    @extend %clearfix;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
