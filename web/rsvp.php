@@ -34,7 +34,7 @@ $headers = "From: $first_name $last_name \r\n";
 //Send the email!
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
-header('Location: thank-you.twig');
+header('Location: thank-you');
 
 
 // Function to validate against any email injection attempts
