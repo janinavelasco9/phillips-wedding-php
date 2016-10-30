@@ -11,7 +11,7 @@ var rename = require('gulp-rename');
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('web/css'));
+        .pipe(gulp.dest('web/stylesheets'));
 });
 
 // Watch Files For Changes
